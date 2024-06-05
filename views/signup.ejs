@@ -1,0 +1,18 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container py-5" style="display: flex; justify-content: center; align-items: center; ">
+    <div class="card" style="width: 18rem;">
+        <h1 class="text-center">Sign<span class="text-primary">up</span></h1>
+        <div class="card-body">
+          <form action="/signup" method="post">
+            <input type="text" class="form-control py-2 mt-2" name="name" placeholder="John doe">
+            <input type="number" class="form-control py-2 mt-2" name="number" placeholder="+91 1234567890">
+            <input type="email" class="form-control py-2 mt-2" name="userEmail" placeholder="expamle@gmail.com">
+            <input type="password" class="form-control py-2 mt-2" name="userPassword" placeholder="********">
+            <input type="password" class="form-control py-2 mt-2" name="password" placeholder="Re-pswd">
+            <input type="submit" class="form-control py-2 mt-2 btn btn-primary" value="Signup">
+          </form>
+        </div>
+      </div>
+</div>
+<%- include('./partials/footer.ejs') %>
